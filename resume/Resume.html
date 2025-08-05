@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Stylesheet" href="styles.css">
+	<title>King Resume</title>
+</head>
+<body>
+  <div class="resume-container">
+    <header>
+      <div class="container header-container">
+        <img src="https://cdn.discordapp.com/attachments/1054371666043605033/1147205683624824832/King.png?ex=6890364d&is=688ee4cd&hm=abab864eec770dd4ad3b5bc642b2649ba96ed72ca1cdfc8c8782bd5be49b4f47&" class="profile-pic"  id="openProfile"  alt="Profile Picture">
+        <div class="header-text">
+          <h1>King Ezekiel D. David</h1> 
+          <p class="tagline">Calll me DotDot</p>
+        </div>
+      </div>
+    </header>
+
+    <div id="zoomModal" class="modal">
+      <button id="closeModal" class="back-button">&larr; Back</button>
+      <img src="Picture/1by1.png" class="zoomed-pic" alt="Zoomed Profile Picture">
+    </div>
+
+    <script>
+        const openProfile = document.getElementById('openProfile');
+        const zoomModal = document.getElementById('zoomModal');
+      const closeModal = document.getElementById('closeModal');
+
+        openProfile.addEventListener('click', () => {
+        zoomModal.style.display = 'flex';
+        });
+
+        closeModal.addEventListener('click', () => {
+          zoomModal.style.display = 'none';
+        });
+    </script>
+
+    <section id="contact">
+      <h3>Personal Contact Information</h3>
+      <p>📞 09270640389</p>
+      <p>📍San Nicolas Balas Concepcion tarlac</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am King Ezekiel D. David, a dedicated and hardworking individual from Concepcion, Tarlac. I am a Born Again Christian, fluent in Tagalog and Kapampangan. I value respect, learning, and teamwork, and I am eager to grow and contribute to any organization I join</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="List">
+        <li>Elementary:Little Angel Elementary School S.Y 2015 - 2016</li>
+        <li>High School:Dolores National High School S.Y 2020-2021 </li>
+        <li>Senior High:Concepcion Holy Cross College, Inc. S.Y 2022-2023</li>
+      <li>College:Dominican College Of Tarlac (2024–Present)</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Mechanic</li>
+        <li>Game Deloper</li>
+        <li>Photoshop</li>
+        <li>Video Editing</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects & Experience</h2>
+      <ul class="experience-list">
+        <li>
+          <strong>Game Deloper In Five M</strong>
+        </li>
+        
+      </ul>
+    </section>
+
+    <section class="contact-comment-section">
+    <div class="contact-box">
+      <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+      <form action="#">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+        <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+      </form>
+    </div>
+
+    <div class="comment-box">
+      <h2><i class="fas fa-comments"></i> Comments</h2>
+      <form action="#">
+        <textarea placeholder="Leave a comment..."></textarea>
+        <button><i class="fas fa-comment-dots"></i> Submit</button>
+      </form>
+    </div>
+    </section>
+
+    <footer>
+      <button class="download-btn">Download Resume</button>
+      <p>© 2025 King Ezekiel David</p>
+    </footer> 
+  </div>
+</body>
+</html>
